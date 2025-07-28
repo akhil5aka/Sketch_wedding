@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import img1 from '../assets/background/bg1.jpeg';
-import img2 from '../assets/background/bg3.jpeg';
-import img3 from '../assets/background/bg4.jpeg';
+import img1 from '../../assets/background/bg1.jpeg';
+import img2 from '../../assets/background/bg3.jpeg';
+import img3 from '../../assets/background/bg4.jpeg';
 
 const bgImages = [img1, img2, img3];
 

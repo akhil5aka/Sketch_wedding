@@ -1,4 +1,4 @@
-import bg1 from "../assets/banners/banner1.jpeg";
+import bg1 from "../../assets/banners/banner1.jpeg"
 
 export default function BottomFilimBanner() {
   return (

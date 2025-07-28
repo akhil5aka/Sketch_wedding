@@ -1,6 +1,6 @@
-import img1 from '../assets/sk1.jpeg';
-import img2 from '../assets/sk2.jpeg';
-import img3 from '../assets/sk3.jpeg';
+import img1 from '../../assets/sk1.jpeg';
+import img2 from '../../assets/sk2.jpeg';
+import img3 from '../../assets/sk3.jpeg';
 
 export default function WeddingSection() {
   return (

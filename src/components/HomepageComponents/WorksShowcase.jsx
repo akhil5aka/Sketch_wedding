@@ -1,7 +1,7 @@
 
-import img1 from "../assets/Works/work1.jpeg";
-import img2 from '../assets/Works/work4.jpeg';
-import img3 from '../assets/Works/work3.jpeg';
+import img1 from "../../assets/Works/work1.jpeg";
+import img2 from '../../assets/Works/work4.jpeg';
+import img3 from '../../assets/Works/work3.jpeg';
 
 
 export default function WorksShowcase() {   
@@ -31,6 +31,10 @@ export default function WorksShowcase() {
             </div>
             {/* Repeat for more works */}
             </div>
+        </div>
+        <div className="mt-10 flex justify-center">
+        <button className="py-7 px-7 me-7 mb-4  text-lg font-medium bg-offwhite rounded-sm border border-gray-400 hover:bg-brown-700 hover:text:blue-200">See more Gallery</button>
+
         </div>
         </div>
     );
