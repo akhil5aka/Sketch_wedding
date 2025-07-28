@@ -4,6 +4,8 @@ import About from './components/About';
 import HeroCarousel from './components/HeroCarousel'; 
 import AboutUsBrief from './components/AboutUsBrief';
 import WeddingStorySection from './components/WeddingStorySection';
+import BottomFilimBanner from './components/BottomFilimBanner';
+import WorksShowcase from './components/WorksShowcase';
 import Footer from './components/Footer';
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
       <HeroCarousel />
       <AboutUsBrief />
       <WeddingStorySection />
+      <BottomFilimBanner />
+      <WorksShowcase />
       <About />
       {/* Add Gallery, Services, etc. */}
       <Footer />
