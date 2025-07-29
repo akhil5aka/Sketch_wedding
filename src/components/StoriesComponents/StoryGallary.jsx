@@ -37,7 +37,7 @@ export default function StoryGallery() {
 
         <div className="relative w-full h-screen bg-cover bg-center flex items-center justify-center object-cover px-4 py-8"
          style={{
-          backgroundImage: `url(/src/assets/Stories/${slug}/banner.jpeg)`,
+          backgroundImage: `url(/Stories/${slug}/banner.jpeg)`,
           backgroundRepeat: "no-repeat",
         }}
         >
@@ -65,7 +65,7 @@ export default function StoryGallery() {
           
           <img
           key={index}
-            src={`/src/assets/Stories/${slug}/${filename}`}
+            src={`/Stories/${slug}/${filename}`}
             alt={`Story Image ${index + 1}`}
             className="w-full mb-4 object-cover rounded-md shadow hover:scale-105 transition-transform duration-300"
           />

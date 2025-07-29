@@ -1,4 +1,4 @@
-import {stories} from "../../assets/Stories/StoryList";
+import {stories} from "../../../public/Stories/StoryList";
 import { Link } from "react-router-dom";
 export default function StoriesComponent() {
     return (
