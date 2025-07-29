@@ -11,9 +11,28 @@ import WorksShowcase from './components/HomepageComponents/WorksShowcase';
 
 import Home from "./pages/HomePage";
 import AboutPage from './pages/AboutPage';
+import StoriesPage from './pages/StoriesPage'; // Importing the StoriesPage component
+import StoryGallary from './components/StoriesComponents/StoryGallary'; // Importing the StoryGallary component
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import { BrowserRouter as Router, Routes, Route,useLocation } from 'react-router-dom';
 import Footer from './components/Footer';
+
+
+function LayoutWrapper({ children }) {
+  const location = useLocation();
+
+  const isStoryGallery = location.pathname.startsWith("/story/");
+
+  return (
+    <>
+      <Navbar hideBackground={isStoryGallery} />
+      {children}
+    </>
+  );
+}
+
+
 
 function App() {
   return (
@@ -22,12 +41,16 @@ function App() {
 
       <Router>
       <div>
-        <Navbar /> {/* Always visible */}
-        
+        {/* <Navbar /> Always visible */}
+        <LayoutWrapper>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/stories" element={<StoriesPage />} />
+          <Route path="/story/:slug" element={<StoryGallary />} />
+          {/* Add other routes as needed */}
         </Routes>
+        </LayoutWrapper>
 
         <Footer /> {/* Always visible */}
       </div>

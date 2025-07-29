@@ -9,7 +9,7 @@ export default function WeddingSection() {
         {/* Text Content */}
         <div className="md:flex md:justify-between md:items-start mb-12">
           <div className="md:w-1/2 mb-8 md:mb-0">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug">
+            <h2 className="text-3xl md:text-4xl font-serif text-gray-900 leading-snug">
               Capturing Timeless Wedding Moments
             </h2>
           </div>

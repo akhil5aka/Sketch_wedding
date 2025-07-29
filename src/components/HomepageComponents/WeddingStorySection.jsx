@@ -3,7 +3,7 @@ export default function WeddingStorySection() {
     <section className="bg-white py-16 px-6 md:px-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
         <div className="md:w-1/2 text-ceter md:text-left">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+          <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-8">
             Our Wedding Story
           </h2>
           <p className="text-gray-700 text-lg leading-relaxed mb-6">
@@ -41,7 +41,7 @@ export default function WeddingStorySection() {
 //       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
 //         {/* Text Content */}
 //         <div className="md:w-1/2 text-center md:text-left">
-//           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Wedding Story</h2>
+//           <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-6">Our Wedding Story</h2>
 //           <p className="text-gray-700 text-lg leading-relaxed mb-4">
 //             Every wedding has a unique story, and we are here to tell yours. Our team captures the essence of your love story,
 //             from the first glance to the last dance. We believe in creating a narrative that reflects your journey together,

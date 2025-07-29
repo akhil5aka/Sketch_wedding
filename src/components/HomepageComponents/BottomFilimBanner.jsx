@@ -17,7 +17,7 @@ export default function BottomFilimBanner() {
     
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-center py-16">
-        <h2 className="text-3xl font-bold mb-4">WEDDING STORY</h2>
+        <h2 className="text-3xl font-serif mb-4">WEDDING STORY</h2>
         <p className="mb-6">
           At Sketch Wedding, passion and creativity drive everything we
           do. Our team is dedicated to capturing stunning, emotion-filled
