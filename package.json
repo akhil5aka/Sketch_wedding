@@ -1,6 +1,6 @@
 {
-  "name": "my-react-app",
-  "private": true,
+  "name": "sketch-wedding",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://akhil5aka.github.io/Sketch_wedding",
