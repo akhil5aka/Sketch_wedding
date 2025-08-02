@@ -15,7 +15,7 @@ import StoriesPage from './pages/StoriesPage'; // Importing the StoriesPage comp
 import StoryGallary from './components/StoriesComponents/StoryGallary'; // Importing the StoryGallary component
 
 
-import { HashRouter as Router, Routes, Route,useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route,useLocation } from 'react-router-dom';
 import Footer from './components/Footer';
 
 
