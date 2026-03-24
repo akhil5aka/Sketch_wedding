@@ -3,23 +3,17 @@ import bg1 from "../../assets/banners/banner1.jpeg"
 
 export default function BottomFilimBanner() {
   return (
-    <div className="relative bg-gray-1 text-white  text-center h-[600px]">
+    <div className="relative bg-gray-900 text-white flex items-center justify-center min-h-[400px] md:h-[600px] overflow-hidden">
       <div
-        className="absolute inset-0  bg-cover bg-bottom bg-no-repeat opacity-80"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
         style={{
           backgroundImage: `url(${bg1})`,
-          backgroundSize: "cover",
-          backgroundPosition: "bottom",
-          backgroundRepeat: "no-repeat",
-          width: "100%",
-          height: "600px",
         }}
-      > </div>
+      ></div>
     
-
-      <div className="relative z-10 max-w-4xl mx-auto px-4 text-center py-16">
-        <h2 className="text-3xl font-serif mb-4">WEDDING STORY</h2>
-        <p className="mb-6">
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center py-20">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-6">WEDDING STORY</h2>
+        <p className="mb-8 text-lg md:text-xl leading-relaxed">
           At Sketch Wedding, passion and creativity drive everything we
           do. Our team is dedicated to capturing stunning, emotion-filled
           moments that you’ll cherish forever. When you choose us, you’re not
@@ -28,7 +22,7 @@ export default function BottomFilimBanner() {
         </p>
         <Link
           to="/films"
-          className="bg-yellow-500 text-gray-800 px-6 py-3 rounded hover:bg-yellow-400 transition"
+          className="inline-block bg-yellow-500 text-gray-900 px-8 py-3 rounded-md font-semibold hover:bg-yellow-400 transition-colors shadow-lg"
         >
           View Films
         </Link>

@@ -2,8 +2,8 @@ export default function WeddingStorySection() {
   return (
     <section className="bg-white py-16 px-6 md:px-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        <div className="md:w-1/2 text-ceter md:text-left">
-          <h2 className="text-3xl md:text-4xl font-serif text-gray-900 mb-8">
+        <div className="md:w-1/2 text-center md:text-left">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-gray-900 mb-8">
             Our Wedding Story
           </h2>
           <p className="text-gray-700 text-lg leading-relaxed mb-6">
@@ -21,9 +21,9 @@ export default function WeddingStorySection() {
           </p>
         </div>
 
-        <div className="animate-slide-right md:w-1/2 w-full">
+        <div className="md:w-1/2 w-full aspect-video">
           <iframe
-            className=" w-full h-69 md:h-96 rounded-lg shadow-lg"
+            className="w-full h-full rounded-lg shadow-lg"
             src="https://www.youtube.com/embed/sEjPczAi29I"
             title="Sample Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

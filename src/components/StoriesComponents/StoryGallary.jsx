@@ -32,52 +32,38 @@ export default function StoryGallery() {
   };
 
   return (
-
     <div className="min-h-screen">
-
-        <div className="relative w-full h-screen bg-cover bg-center flex items-center justify-center object-cover px-4 py-8"
+        <div className="relative w-full h-screen bg-cover bg-center flex items-center justify-center px-4"
          style={{
-          backgroundImage: `url(/Stories/${slug}/banner.jpeg)`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/Stories/${slug}/banner.jpeg)`,
           backgroundRepeat: "no-repeat",
         }}
         >
-            <div>
-                <h2 className="text-4xl  font-serif font-bold text-white mb-4  px-4 py-4">
+            <div className="text-center">
+                <h2 className="text-4xl md:text-5xl lg:text-7xl font-serif font-bold text-white mb-8 tracking-wider">
                     {slug.replace(/-/g, " ").toUpperCase()}
                 </h2>
                 <button 
                   onClick={handleScrollToGallery}
-                className="py-4 px-4 me-7 mb-4 ml-20 text-lg font-serif font-bold bg-offwhite rounded-sm border-2 border-gray-100 hover:bg-brown-700 text-white hover:text-white">
-                    view all images
+                  className="py-4 px-8 text-lg font-serif font-bold text-white border-2 border-white hover:bg-white hover:text-black transition-all duration-300 rounded-sm">
+                    VIEW ALL IMAGES
                 </button>
-               
             </div>
-
         </div>
 
-
-
       <div 
-      ref={galleryRef}
-       className="columns-1 sm:columns-2 md:columns-3 lg-columns-5 gap-6 p-4 space-y-2">
-        
+        ref={galleryRef}
+        className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-6 p-6 space-y-6"
+      >
         {imageFilenames.map((filename, index) => (
-          
           <img
-          key={index}
+            key={index}
             src={`/Stories/${slug}/${filename}`}
             alt={`Story Image ${index + 1}`}
-            className="w-full mb-4 object-cover rounded-md shadow hover:scale-105 transition-transform duration-300"
+            className="w-full break-inside-avoid rounded-lg shadow-sm hover:shadow-xl hover:scale-[1.02] transition-all duration-500 cursor-zoom-in"
           />
-        
-
         ))}
-
-
-
-        
       </div>
-
     </div>
   );
 }
