@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import bg1 from "../../assets/banners/banner1.jpeg"
 
 export default function BottomFilimBanner() {
@@ -25,12 +26,12 @@ export default function BottomFilimBanner() {
           just getting photographers—you’re getting a team that is professional,
           timely, attentive, and truly passionate about their craft.
         </p>
-        <a
-          href="https://www.youtube.com/embed/sEjPczAi29I"
+        <Link
+          to="/films"
           className="bg-yellow-500 text-gray-800 px-6 py-3 rounded hover:bg-yellow-400 transition"
         >
           View Films
-        </a>
+        </Link>
       </div>
     </div>
   );

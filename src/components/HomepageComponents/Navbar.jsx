@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import img1 from '../../assets/background/bg1.jpeg';
 import img2 from '../../assets/background/bg3.jpeg';
 import img3 from '../../assets/background/bg4.jpeg';
@@ -28,12 +29,12 @@ export default function Navbar({ hideBackground = false }) {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <img src="/logo.png" alt="Sketch Wedding" className="h-10" />
           <ul className="flex space-x-6 text-black font-serif text-lg">
-            <li><a href="/" className="hover:text-green-500">Home</a></li>
-            <li><a href="/about/" className="hover:text-green-500">About</a></li>
-            <li><a href="/stories/" className="hover:text-green-500">Stories</a></li>
-            <li><a href="/films/" className="hover:text-green-500">Films</a></li>
-            <li><a href="/blog/" className="hover:text-green-500">Blog</a></li>
-            <li><a href="/contact/" className="hover:text-green-500">Contact</a></li>
+            <li><Link to="/" className="hover:text-green-500">Home</Link></li>
+            <li><Link to="/about" className="hover:text-green-500">About</Link></li>
+            <li><Link to="/stories" className="hover:text-green-500">Stories</Link></li>
+            <li><Link to="/films" className="hover:text-green-500">Films</Link></li>
+            <li><Link to="/blog" className="hover:text-green-500">Blog</Link></li>
+            <li><Link to="/contact" className="hover:text-green-500">Contact</Link></li>
           </ul>
         </div>
       </nav>
@@ -60,12 +61,12 @@ export default function Navbar({ hideBackground = false }) {
         <div className="flex items-center justify-between">
           <img src="/logo.png" alt="Sketch Wedding" className="h-10" />
           <ul className="flex space-x-6 text-lg font-serif">
-            <li><a href="/" className="hover:text-yellow-300 transition">Home</a></li>
-            <li><a href="/about/" className="hover:text-yellow-300 transition">About</a></li>
-            <li><a href="/stories/" className="hover:text-yellow-300 transition">Stories</a></li>
-            <li><a href="/films/" className="hover:text-yellow-300 transition">Films</a></li>
-            <li><a href="/blog/" className="hover:text-yellow-300 transition">Blog</a></li>
-            <li><a href="/contact/" className="hover:text-yellow-300 transition">Contact</a></li>
+            <li><Link to="/" className="hover:text-yellow-300 transition">Home</Link></li>
+            <li><Link to="/about" className="hover:text-yellow-300 transition">About</Link></li>
+            <li><Link to="/stories" className="hover:text-yellow-300 transition">Stories</Link></li>
+            <li><Link to="/films" className="hover:text-yellow-300 transition">Films</Link></li>
+            <li><Link to="/blog" className="hover:text-yellow-300 transition">Blog</Link></li>
+            <li><Link to="/contact" className="hover:text-yellow-300 transition">Contact</Link></li>
           </ul>
         </div>
 

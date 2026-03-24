@@ -12,6 +12,7 @@ import WorksShowcase from './components/HomepageComponents/WorksShowcase';
 import Home from "./pages/HomePage";
 import AboutPage from './pages/AboutPage';
 import StoriesPage from './pages/StoriesPage'; // Importing the StoriesPage component
+import FilmsPage from './pages/FilmsPage'; // Importing the FilmsPage component
 import StoryGallary from './components/StoriesComponents/StoryGallary'; // Importing the StoryGallary component
 
 
@@ -47,6 +48,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/stories" element={<StoriesPage />} />
+          <Route path="/films" element={<FilmsPage />} />
           <Route path="/story/:slug" element={<StoryGallary />} />
           {/* Add other routes as needed */}
         </Routes>
