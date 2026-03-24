@@ -7,7 +7,7 @@ export default function StoriesComponent() {
             <div className="container-fluid max-w-4px mx-auto px-6 py-12 mrg-auto">
             <h2 className="text-3xl font-serif text-center mb-8">Every Photo Tells a Story</h2>
             <p className="text-lg text-gray-700 mb-6">
-                At Sketch Wedding, we believe that every love story is unique and deserves to be told in a way that reflects the personalities and emotions of the couple. Our journey began with a passion for storytelling through photography and videography, capturing the essence of love in its purest form.
+                At Sketch Wedding, we believe  that every love story is unique and deserves to be told in a way that reflects the personalities and emotions of the couple. Our journey began with a passion for storytelling through photography and videography, capturing the essence of love in its purest form.
             </p>
             <p className="text-lg text-gray-700 mb-6">
                 With years of experience in the industry, our team is dedicated to creating timeless memories that couples can cherish forever. We take pride in our attention to detail, creativity, and commitment to excellence, ensuring that every moment is captured beautifully.
